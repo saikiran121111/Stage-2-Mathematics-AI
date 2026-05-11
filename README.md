@@ -16,6 +16,7 @@ employees_matrix = np.array([
     [1, 50000],  # Alice
     [2, 60000]   # Bob
 ])
+
 3. What is a Dot Product?
 This is the single most important math operation in AI. Neural networks run on millions of dot products.
 A dot product takes two vectors, multiplies their matching items together, and then adds those results up into a single number.  
