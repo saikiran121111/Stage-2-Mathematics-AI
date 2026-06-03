@@ -80,3 +80,9 @@ L = np.diag(eigenValue) # Converts the Eigen Values to diagonal Matrix
 rebuildingMatrix = eigenVector @ L @ np.linalg.inv(eigenVector)
 
 print(rebuildingMatrix)
+
+# The main reason we do this inversion because to raise the matrix to maximum power
+# Like multiplying matrix by itself 100 times will burn the CPU down
+# So mathematicians figured it out that we simply multiply the diagonal of eigen value instead of general matrix
+# This will automatically makes matrix to high power with less calculations
+# Same output lightning fast !!!
